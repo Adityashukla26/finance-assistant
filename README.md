@@ -7,6 +7,7 @@ A comprehensive AI-powered personal finance platform built with Next.js. Your co
 - **🤖 AI-Powered Conversational Coach**: Get personalized financial advice through natural language chat
 - **📊 Tax Optimization Simulator**: Calculate potential tax savings with detailed recommendations
 - **📝 User Registration System**: Comprehensive form to collect user profiles and preferences
+- **🔐 Dashboard Authentication**: MongoDB-backed login with secure session cookies
 - **� Google Sheets Integration**: Automatic data storage and management for user registrations
 - **�📱 Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **🎯 Strategic Business Blueprint**: Three-phase development roadmap visualization
@@ -200,6 +201,10 @@ GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL=your-service-account@project.iam.gserviceacc
 GOOGLE_SERVICE_ACCOUNT_CLIENT_ID=your_client_id
 GOOGLE_SERVICE_ACCOUNT_AUTH_URI=https://accounts.google.com/o/oauth2/auth
 GOOGLE_SERVICE_ACCOUNT_TOKEN_URI=https://oauth2.googleapis.com/token
+
+# Dashboard Auth (MongoDB)
+MONGODB_URI=your_mongodb_connection_string_here
+JWT_SECRET=replace_with_a_long_random_secret
 
 # Note: NEXT_PUBLIC_ prefix exposes variables to the browser
 # Server-side only variables (like Google credentials) don't need this prefix

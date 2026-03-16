@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // No experimental config needed for app directory in Next.js 14
-}
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'http://localost:3000/:path*', // The :path parameter is used here so will not be automatically passed in the query
+      },
+    ]
+  },
 
+}
 module.exports = nextConfig

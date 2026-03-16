@@ -4,10 +4,39 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.5);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #f8fafc; /* slate-50 */
   color: #1e293b; /* slate-800 */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .gradient-text {
@@ -106,4 +135,207 @@ body {
 
 .formatted-content code {
   font-family: 'Courier New', monospace;
+}
+
+/* Dashboard Animations and Transitions */
+
+/* Stock ticker scroll animation */
+@keyframes tickerScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-animation {
+  animation: tickerScroll 24s linear infinite;
+}
+
+/* Smooth transitions for interactive elements */
+.smooth-transition {
+  transition: all 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Pulse animation for important elements */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Shimmer loading effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* Progress bar animation */
+@keyframes progressGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--target-width);
+  }
+}
+
+.progress-animate {
+  animation: progressGrow 1s ease-out forwards;
+}
+
+/* Rotate animation for refresh buttons */
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-on-click {
+  transition: transform 0.5s ease;
+}
+
+.rotate-on-click.rotating {
+  animation: rotate360 0.5s ease;
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* Chart container styling */
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 320px;
+}
+
+/* Popover styling */
+.popover {
+  position: absolute;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.popover.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Metric card animations */
+.metric-card {
+  transition: all 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* Dashboard Specific Colors */
+:root {
+  --dashboard-primary: #0f0f23;
+  --dashboard-secondary: #1a1a2e;
+  --accent-blue: #00d9ff;
+  --accent-purple: #b967ff;
+  --accent-teal: #00ffcc;
+  --accent-orange: #ff6b35;
+  --accent-yellow: #ffd166;
+}
+
+/* Number counter styling */
+.counter-number {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* Profile dropdown animation */
+@keyframes dropdownSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sidebar slide animation */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Overlay fade in */
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
