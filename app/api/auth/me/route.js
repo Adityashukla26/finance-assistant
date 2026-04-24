@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
-import { getDb } from '../_lib/mongodb'
 import { getSessionCookieName, verifySessionToken } from '../_lib/session'
 
 export async function GET() {
@@ -13,16 +12,10 @@ export async function GET() {
     }
 
     const payload = verifySessionToken(token)
-    const db = await getDb()
-    const users = db.collection('users')
-    const user = await users.findOne({ email: payload.email })
 
-    if (!user) {
-      return NextResponse.json({ user: null }, { status: 200 })
-    }
-
+    // Mocked me route
     return NextResponse.json({
-      user: { id: user._id.toString(), email: user.email, name: user.name },
+      user: { id: 'dummy_id', email: payload.email, name: payload.email.split('@')[0] },
     })
   } catch (error) {
     console.error('Session check error:', error)

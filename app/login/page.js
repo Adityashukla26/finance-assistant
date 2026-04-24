@@ -44,7 +44,7 @@ export default function LoginPage() {
   return (
     <main className="min-h-screen bg-slate-950 px-4 py-8 text-white">
       <div className="mx-auto max-w-md rounded-2xl border border-white/10 bg-slate-900/90 p-6 shadow-xl">
-        <h1 className="text-2xl font-bold">Login to Zenith Dashboard</h1>
+        <h1 className="text-2xl font-bold">Login to FinTrack Dashboard</h1>
         <p className="mt-2 text-sm text-slate-400">
           Use your email and password to continue. First-time sign-ins create an account automatically.
         </p>

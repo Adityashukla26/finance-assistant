@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <h3 className="text-xl font-bold gradient-text mb-4">
-              Zenith Finance
+              FinTrack
             </h3>
             <p className="text-slate-400 text-sm leading-relaxed">
               Your AI-powered personal finance assistant. Comprehensive financial planning, investment guidance, and wealth optimization for Everyone.
@@ -50,7 +50,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-slate-400 text-sm">
-              © 2025 Zenith Finance. All rights reserved.
+              © 2025 FinTrack. All rights reserved.
             </div>
             <div className="flex space-x-6">
               <a href="#" className="text-slate-400 hover:text-white transition-colors">

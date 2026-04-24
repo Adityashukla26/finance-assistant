@@ -26,7 +26,7 @@ export default function AccountSummary() {
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         <div>
           <p className="text-xs text-slate-400">Name</p>
-          <p className="font-semibold text-white">{user.name || user.email?.split('@')[0] || 'Zenith User'}</p>
+          <p className="font-semibold text-white">{user.name || user.email?.split('@')[0] || 'FinTrack User'}</p>
         </div>
         <div>
           <p className="text-xs text-slate-400">Email</p>

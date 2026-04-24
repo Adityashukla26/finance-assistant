@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 
-const API_KEY = "AIzaSyBhNlnKyw8xOP9_2KKiV6vTwa_OMccIiRI"
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${API_KEY}`
+const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY || "AIzaSyAyV_Ws3CeZKwFYP59jlfzaJExrm3dyHKc"
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`
 
 export default function TaxSimulator() {
   const [annualIncome, setAnnualIncome] = useState('')
@@ -219,7 +219,7 @@ export default function TaxSimulator() {
     setResults('')
 
     try {
-      const systemPrompt = `You are 'Zenith Tax Optimizer', an AI tool for Indian users. Analyze the following financial data and provide a personalized tax-saving strategy report.
+      const systemPrompt = `You are 'FinTrack Tax Optimizer', an AI tool for Indian users. Analyze the following financial data and provide a personalized tax-saving strategy report.
         - The user is under the OLD tax regime.
         - The Section 80C limit is ₹1,50,000.
         - The standard deduction is ₹50,000.

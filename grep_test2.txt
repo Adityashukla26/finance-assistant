@@ -1,0 +1,4 @@
+t_use__ default auto */ \nvar _s = $RefreshSig$();\n\nconst API_KEY = \"AIzaSyBhNlnKyw8xOP9_2KKiV6vTwa_OMccIiRI\";\nconst API_U
+.5-flash-preview-05-20:generateContent?key\", \"=\").concat(API_KEY);\nfunction ConversationalCoach() {\n    _s();\n    const [
+t_use__ default auto */ \nvar _s = $RefreshSig$();\n\nconst API_KEY = \"AIzaSyBhNlnKyw8xOP9_2KKiV6vTwa_OMccIiRI\";\nconst API_U
+emini-2.5-flash-preview-05-20:generateContent?key=\".concat(API_KEY);\nfunction TaxSimulator() {\n    _s();\n    const [annualI

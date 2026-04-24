@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
 
-const TOKEN_NAME = 'zenith_session'
+const TOKEN_NAME = 'fintrack_session'
 const TOKEN_TTL_DAYS = 7
 
 export function createSessionToken(payload) {

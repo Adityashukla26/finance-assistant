@@ -2,14 +2,14 @@
 
 import { useState } from 'react'
 
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY
+const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY
 const API_URL = `${process.env.NEXT_PUBLIC_API_URL}=${API_KEY}`
 
 export default function ConversationalCoach() {
   const [messages, setMessages] = useState([
     {
       role: 'ai',
-      content: "Hi! I'm Zenith. How can I help you with your finances today? Try asking about saving, investing, or taxes in India."
+      content: "Hi! I'm FinTrack. How can I help you with your finances today? Try asking about saving, investing, or taxes in India."
     }
   ])
   const [input, setInput] = useState('')
@@ -191,7 +191,7 @@ export default function ConversationalCoach() {
     setIsLoading(true)
 
     try {
-      const systemPrompt = `You are 'Zenith', a friendly and knowledgeable AI personal finance assistant for users in India. Provide helpful, educational, and general guidance. You are not a licensed financial advisor. Your answers should be clear, concise, and easy for a beginner to understand. Use markdown for formatting. IMPORTANT: Always include the following disclaimer at the end of your response, separated by a horizontal rule (---): 'Disclaimer: This is AI-generated guidance and not professional financial advice. Please consult with a qualified financial advisor for personalized advice.' Now, answer the user's question: "${query}"`
+      const systemPrompt = `You are 'FinTrack', a friendly and knowledgeable AI personal finance assistant for users in India. Provide helpful, educational, and general guidance. You are not a licensed financial advisor. Your answers should be clear, concise, and easy for a beginner to understand. Use markdown for formatting. IMPORTANT: Always include the following disclaimer at the end of your response, separated by a horizontal rule (---): 'Disclaimer: This is AI-generated guidance and not professional financial advice. Please consult with a qualified financial advisor for personalized advice.' Now, answer the user's question: "${query}"`
 
       const responseText = await callGeminiApi(systemPrompt)
       const formattedResponse = formatResponse(responseText)

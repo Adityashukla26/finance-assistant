@@ -1,4 +1,4 @@
-# Zenith Finance - Personal Finance Assistant
+# FinTrack - Personal Finance Assistant
 
 A comprehensive AI-powered personal finance platform built with Next.js. Your complete financial companion for investment planning, tax optimization, and wealth management with intelligent guidance.
 
@@ -28,7 +28,7 @@ A comprehensive AI-powered personal finance platform built with Next.js. Your co
 ## 📁 Project Structure
 
 ```
-zenith-finance-app/
+fintrack-finance-app/
 ├── app/
 │   ├── components/          # React components
 │   │   ├── Header.js        # Navigation and branding
@@ -280,7 +280,7 @@ All data is automatically saved to Google Sheets with timestamps for analysis an
 
 ## 📄 License
 
-© 2025 Zenith Finance. AI-powered personal finance assistant for comprehensive wealth management.
+© 2025 FinTrack. AI-powered personal finance assistant for comprehensive wealth management.
 
 ## 📞 Support
 

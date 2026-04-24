@@ -103,7 +103,7 @@ export default function SolutionSection() {
             A Smarter Way to Manage Your Money
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
-            Zenith is more than an app. It's an intelligent system designed to
+            FinTrack is more than an app. It's an intelligent system designed to
             educate, empower, and guide you towards your financial goals.
           </p>
         </div>

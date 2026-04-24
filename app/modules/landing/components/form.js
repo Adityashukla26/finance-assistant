@@ -85,7 +85,7 @@ function Form() {
 
     const handleConnectWithUs = () => {
         // You can customize this to open WhatsApp, email, or redirect to contact page
-        window.open('mailto:sujalgoel19@gmail.com?subject=Finance Assistant - Let\'s Connect&body=Hi, I just registered for Zenith Finance. I\'d like to connect and learn more about your services.', '_blank')
+        window.open('mailto:sujalgoel19@gmail.com?subject=Finance Assistant - Let\'s Connect&body=Hi, I just registered for FinTrack. I\'d like to connect and learn more about your services.', '_blank')
     }
 
     const handleStartOver = () => {
@@ -105,7 +105,7 @@ function Form() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                        Join Zenith - Your Personal AI Assistant
+                        Join FinTrack - Your Personal AI Assistant
                     </h2>
                     <p className="text-lg text-slate-600 max-w-3xl mx-auto">
                         Get personalized tax optimization suggestions tailored to your financial profile. 
@@ -127,7 +127,7 @@ function Form() {
                                     🎉 Registration Successful!
                                 </h3>
                                 <p className="text-lg text-slate-600 mb-6 max-w-2xl mx-auto">
-                                    Thank you for joining Zenith Finance! Your information has been saved securely. 
+                                    Thank you for joining FinTrack! Your information has been saved securely. 
                                     Our team will review your profile and contact you soon with personalized financial recommendations.
                                 </p>
                                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">

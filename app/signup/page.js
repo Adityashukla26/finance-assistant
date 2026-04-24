@@ -37,7 +37,7 @@ export default function SignupPage() {
   return (
     <main className="min-h-screen bg-slate-950 px-4 py-8 text-white">
       <div className="mx-auto max-w-md rounded-2xl border border-white/10 bg-slate-900/90 p-6 shadow-xl">
-        <h1 className="text-2xl font-bold">Create your Zenith account</h1>
+        <h1 className="text-2xl font-bold">Create your FinTrack account</h1>
         <p className="mt-2 text-sm text-slate-400">Sign up to access the dashboard.</p>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">

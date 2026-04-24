@@ -12,7 +12,7 @@ export default function DemoSection() {
       <div className="container mx-auto px-3 md:px-4 lg:px-6">
         <div className="text-center mb-2 md:mb-4 lg:mb-6">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900">
-            Zenith AI in Action ✨
+            FinTrack AI in Action ✨
           </h2>
           <p className="mt-2 md:mt-3 lg:mt-4 max-w-2xl mx-auto text-sm md:text-base lg:text-lg text-slate-600 px-2 md:px-4">
             Experience our AI's capabilities firsthand. This is a live demo

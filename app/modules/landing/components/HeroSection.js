@@ -7,7 +7,7 @@ export default function HeroSection() {
           Reach Your Financial
         </h2>
         <h3 className="text-4xl md:text-6xl font-extrabold leading-tight mt-2">
-          <span className="gradient-text">Zenith</span>.
+          <span className="gradient-text">FinTrack</span>.
         </h3>
         <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-600">
           India's first AI-native financial coach. We simplify complexity,

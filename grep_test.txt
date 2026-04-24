@@ -1,0 +1,2 @@
+KiV6vTwa_OMccIiRI\";\nconst API_URL = \"\".concat(\"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20
+nKyw8xOP9_2KKiV6vTwa_OMccIiRI\";\nconst API_URL = \"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20

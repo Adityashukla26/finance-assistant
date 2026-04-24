@@ -7,7 +7,7 @@ export default function Header() {
     <header className="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-slate-200">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold text-slate-800">
-          <span className="gradient-text">Zenith Finance</span>
+          <span className="gradient-text">FinTrack</span>
         </h1>
         <nav className="hidden md:flex space-x-8">
           <a

@@ -39,7 +39,7 @@ export default function DashboardSidebar({ isOpen, onClose }) {
           ✕
         </button>
 
-        <h2 className="mb-5 text-xl font-bold text-cyan-300">Zenith</h2>
+        <h2 className="mb-5 text-xl font-bold text-cyan-300">FinTrack</h2>
         <nav className="flex-1 space-y-2">
           {navItems.map((item) => {
             const isActive = pathname === item.href
